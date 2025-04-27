@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manas Malhotra's Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #00695c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: #004d40;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      color: #b2dfdb;
+      background-color: rgba(178, 223, 219, 0.1);
+    }
+
+    section {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    section h2 {
+      margin-bottom: 1.5rem;
+      color: #00796b;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #b2dfdb;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    li:before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #00796b;
+    }
+
+    .project-link {
+      color: #00796b;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      border-bottom: 1px dashed transparent;
+    }
+
+    .project-link:hover {
+      color: #004d40;
+      border-bottom-color: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #263238;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      section {
+        padding: 1.5rem;
+        margin: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manas Malhotra</h1>
+    <p>B.Tech in Computer Science - Cloud Computing</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate technology enthusiast currently pursuing a B.Tech in Computer Science with a specialization in Cloud Computing. I enjoy developing cloud-native solutions, building machine learning models, and creating data-driven applications.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science (Cloud Computing)</strong></li>
+      <li><strong>Current Year:</strong> Third Year</li>
+      <li><strong>University:</strong> UPES, Dehradun</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Data Analyst Intern</strong> — Faxoc Jobs & HRMS Pvt Ltd.
+        <p>Worked on data processing and analysis tasks to support HR decision-making processes.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Cloud Technologies:</strong> AWS, FastAPI, Streamlit, GitHub Actions</li>
+      <li><strong>Programming:</strong> Python, SQL, HTML, CSS</li>
+      <li><strong>Soft Skills:</strong> Communication, Team Collaboration, Problem Solving</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="https://titanic-app-app-etjpxnav4axbklobvgexuu.streamlit.app/" target="_blank" class="project-link">
+          Titanic Prediction Model
+        </a> 
+        <p>Machine learning model that predicts survival outcomes on the Titanic dataset with Streamlit interface.</p>
+      </li>
+      <li>
+        <a href="https://database-ermzab7mwzjhqtczugpgnq.streamlit.app/" target="_blank" class="project-link">
+          Machine Learning Prediction System
+        </a>
+        <p>Interactive application that demonstrates machine learning predictions with a database backend.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Email:</strong> manasmalhotra13apr@gmail.com</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/IndianLadkka" target="_blank" class="project-link">github.com/IndianLadkka</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/captmanas/" class="project-link">Connect with me</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manas Malhotra | All rights reserved</p>
+  </footer>
+</body>
+</html>
